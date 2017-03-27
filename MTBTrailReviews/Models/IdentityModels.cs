@@ -25,6 +25,9 @@ namespace MTBTrailReviews.Models
         {
         }
 
+        public DbSet<Trail> Trail { get; set; }
+        public DbSet<Review> Review { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
